@@ -179,8 +179,8 @@ def do_setup(package_data):
         install_requires=[
             "cffi",
             "cython",
-            "hydra-core>=1.0.7,<1.1",
-            "omegaconf<2.1",
+            "hydra-core",
+            "omegaconf",
             "numpy>=1.21.3",
             "regex",
             "sacrebleu>=1.4.12",
@@ -192,7 +192,7 @@ def do_setup(package_data):
             "packaging",
         ],
         extras_require={
-            "dev": ["flake8", "pytest", "black==22.3.0"],
+            "dev": ["flake8", "pytest", "black"],
             "docs": ["sphinx", "sphinx-argparse"],
         },
         dependency_links=dependency_links,
